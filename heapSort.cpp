@@ -2,8 +2,7 @@
 
 using namespace std;
 
-void heapify(int arr[], int n, int i)
-{
+void heapify(int arr[], int n, int i){
 	int largest = i;
 	int l = 2 * i + 1; 
 	int r = 2 * i + 2; 
@@ -20,8 +19,7 @@ void heapify(int arr[], int n, int i)
 	}
 }
 
-void heapSort(int arr[], int n)
-{
+void heapSort(int arr[], int n){
 	for (int i = n / 2 - 1; i >= 0; i--)
 		heapify(arr, n, i);
 
@@ -31,8 +29,7 @@ void heapSort(int arr[], int n)
 	}
 }
 
-int main()
-{
+int main(){
 	int arr[] = { 124, 1431, 123, 52, 65, 79, 1 };
 	int n = sizeof(arr) / sizeof(arr[0]);
 
